@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/originals/ce/7c/d0/ce7cd0eb8dbbb136afc8e05936ad412f.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px; /* Increased padding */
+            width: 80%; /* Set width to 80% of the viewport width */
+            max-width: 600px; /* Set a maximum width */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+            border-radius: 10px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="info">
+            <p><strong>File Name:</strong> {{ filename }}</p>
+            <p><strong>Result:</strong> {{ result }}</p>
+        </div>
+        <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded Image">
+    </div>
+</body>
+</html>

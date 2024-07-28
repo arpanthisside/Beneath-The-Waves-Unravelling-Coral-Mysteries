@@ -1,0 +1,115 @@
+body {
+    font-family: "Palantino Linotype";
+    margin: 0;
+    padding: 0;
+    background:url("6113891413805613141.jpg");
+    color: #333;
+}
+
+header {
+    
+    font-size: large;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scenario {
+    margin-bottom: 15px;
+}
+
+.scenario h3 {
+    color: rgb(51, 217, 156);
+}
+
+.cta {
+    text-align: center;
+    margin-left: 450px;
+    margin-right: 450px;
+    background-image: linear-gradient( rgb(16, 53, 113), rgb(20, 95, 198));
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #5dd062;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form label {
+    font-size: 1.2em;
+}
+
+form input[type="file"] {
+    padding: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #258987;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgb(23, 191, 129);
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color:  rgb(20, 168, 114);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: rgb(23, 191, 129);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
